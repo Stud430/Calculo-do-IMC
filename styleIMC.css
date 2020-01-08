@@ -1,0 +1,20 @@
+
+/*
+button {
+	height: 30%;
+}
+*/
+
+.table {
+margin: 0 auto;
+width: 10%; /* Valor da Largura */
+}
+
+.form-group{
+margin: 0px auto;
+width: 100%; /* Valor da Largura */
+} /* Lembrar de trocar por 30*/
+
+input[for="text"]{
+	width: 10px;
+}
