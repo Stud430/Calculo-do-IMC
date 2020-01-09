@@ -1,10 +1,4 @@
 
-/* Funciona, mas näo precisa */
-.table {
-margin: 0 auto;
-width: 50%; /* Valor da Largura */
-}
-
 .form-row {
 	margin: 0 auto;
 	width: 80%;
@@ -16,3 +10,4 @@ h4{
 	padding-right: 30px;  
 	padding-left: 80px;
 }
+

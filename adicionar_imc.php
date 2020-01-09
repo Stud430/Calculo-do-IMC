@@ -7,27 +7,27 @@
 
 	function result_imc($num)
 	{
-	    if ( $num < 18.5 ) {
+	    if ( $num <= 18.5 ) {
 	    	$result = "Abaixo do Peso";
 	    	//echo $result;
 	    	return $result;
-	    } elseif ($num >= 18.5 and $num < 24.9) {
+	    } elseif ($num > 18.5 and $num <= 24.9) {
 	    	$result = "Peso Ideal";
 	    	echo $result;
 	    	return $result;
-	    } elseif ($num >= 24.9 and $num < 29.9) {
+	    } elseif ($num > 24.9 and $num <= 29.9) {
 	    	$result = "Acima do Peso";
 	    	echo $result;
 	    	return $result;
-	    } elseif ($num >= 29.9 and $num < 34.9) {
+	    } elseif ($num > 29.9 and $num <= 34.9) {
 	    	$result = "Obesidade Grau 1";
 	    	echo $result;
 	    	return $result;
-	    } elseif ($num >= 34.9 and $num < 39.9) {
+	    } elseif ($num > 34.9 and $num <= 39.9) {
 	    	$result = "Obesidade Grau 2";
 	    	echo $result;
 	    	return $result;
-	    } elseif ($num >= 39.9 and $num > 40) {
+	    } elseif ($num > 39.9 and $num >= 40) {
 	    	$result = "Obesidade Grau 3 ( Mórbida )";
 	    	echo $result;
 	    	return $result;

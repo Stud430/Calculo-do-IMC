@@ -20,7 +20,7 @@
 	
 <br>
 
-<div class="form-group"> 
+ 
 	<h4> Cadastrar IMC </h4>
 	<br>
   <div class="form-row">
@@ -37,12 +37,13 @@
   <!--	<input type="submit" name="cadastrar"> -->
   </div>
   <br>
-  <button type="submit" name="cadastrar" class="btn btn-dark">Cadastrar</button>
-</div>
+  <h4><button type="submit" name="cadastrar" class="btn btn-dark">Cadastrar</button></h4>
+
 </form>
 
 <br>
 <hr>
+
 
 	<br><h2> Listagem</h2><br><br>
 
@@ -83,7 +84,7 @@
           echo "<td><center>" . $linha['resultado'] . "</center></td>";
 	?>
 
-      <td><center><a class="btn btn-danger" href="excluir_imc.php?id=<?php echo $linha["pesagem"]?>">Excluir</a></center></td>
+      <td><center><a class="btn btn-warning" href="alterar_imc.php?id=<?php echo $linha["pesagem"]?>">Alterar</a> <a class="btn btn-danger" href="excluir_imc.php?id=<?php echo $linha["pesagem"]?>">Excluir</a> </center></td>
 
     <?php
           echo "</tr>";
@@ -93,6 +94,51 @@
         echo "</table></center>";
 
         ?>
+
+
 </body>
 
+
 </html>
+
+<!--
+<?php
+    		// Determinar TimeZone
+//    		date_default_timezone_set('America/Sao_Paulo');
+//    		setlocale(LC_TIME, "pt_BR");
+
+//    		$agora = getdate();
+
+    		// Criar Elementos
+//    		$ano = $agora["year"];
+//    		$mes = $agora["mon"];
+//    		//$mes = $agora["month"];
+//    		$dia = $agora["mday"];
+
+//    		$hora = $agora["hours"];
+//    		$minuto = $agora["minutes"];
+//    		$segundo = $agora["seconds"];
+
+//    		echo $dia . "/" . $mes . "/"  . $ano . " - " . $hora . ":" . $minuto . ":" . $segundo;
+
+    	?>
+-->
+
+<!-- 
+    EXEMPLO
+<div class="form-group col-md-2">
+  <h4> Cadastrar IMC </h4>
+  <br>
+  <div class="form-row"> 
+  <label>Altura</label>
+  <input type="text" name="Altura" class="form-control">
+
+  <br><br>
+  <label>Peso</label>
+  <input type="text" name="Peso" class="form-control">
+
+  <br><br>
+  <input type="submit" name="cadastrar">
+  </div>
+</div>
+-->
